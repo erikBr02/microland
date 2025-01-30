@@ -12,11 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 
 
-app.use(cors({
-    origin: process.env.FrontEndURL, // Allow frontend origin
-    methods: ["POST"],
-    allowedHeaders: ["Content-Type"]
-}));
+app.use(cors());
 app.use(express.json());
 
 
