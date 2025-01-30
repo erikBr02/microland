@@ -12,7 +12,7 @@ function App() {
     if(!question.trim()) return; 
     setAnswer("Loading..");
     try {
-      const response = await axios.post("http://localhost:3000/ask-gemini", {
+      const response = await axios.post("microland-2n7y.vercel.api", {
         question
       });
       setAnswer(response.data.answer);
